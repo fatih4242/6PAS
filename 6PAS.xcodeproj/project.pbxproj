@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE222B4328FBF73F00D20BE5 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE222B4228FBF73F00D20BE5 /* NavigationBarView.swift */; };
+		EE222B4728FC024C00D20BE5 /* LiveUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE222B4628FC024C00D20BE5 /* LiveUIView.swift */; };
+		EE222B4A28FC1C8500D20BE5 /* LiveLeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE222B4928FC1C8500D20BE5 /* LiveLeagueModel.swift */; };
+		EE222B6F28FC685700D20BE5 /* LiveUILeagueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE222B6E28FC685700D20BE5 /* LiveUILeagueView.swift */; };
+		EE222B7528FC6CF900D20BE5 /* LiveLeagueService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE222B7428FC6CF900D20BE5 /* LiveLeagueService.swift */; };
+		EE222B7828FC6DE600D20BE5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EE222B7728FC6DE600D20BE5 /* Alamofire */; };
+		EE222B7B28FC6DF200D20BE5 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = EE222B7A28FC6DF200D20BE5 /* SwiftyJSON */; };
 		EE59395E28FAA42200A3C087 /* _PASApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE59395D28FAA42200A3C087 /* _PASApp.swift */; };
 		EE59396028FAA42200A3C087 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE59395F28FAA42200A3C087 /* ContentView.swift */; };
 		EE59396228FAA42300A3C087 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE59396128FAA42300A3C087 /* Assets.xcassets */; };
 		EE59396528FAA42300A3C087 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE59396428FAA42300A3C087 /* Preview Assets.xcassets */; };
-		EE59396728FAA42300A3C087 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE59396628FAA42300A3C087 /* Persistence.swift */; };
 		EE59396A28FAA42300A3C087 /* _PAS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE59396828FAA42300A3C087 /* _PAS.xcdatamodeld */; };
+		EE59397328FAAA5400A3C087 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE59397228FAAA5400A3C087 /* SplashScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE222B4228FBF73F00D20BE5 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		EE222B4628FC024C00D20BE5 /* LiveUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveUIView.swift; sourceTree = "<group>"; };
+		EE222B4928FC1C8500D20BE5 /* LiveLeagueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveLeagueModel.swift; sourceTree = "<group>"; };
+		EE222B6E28FC685700D20BE5 /* LiveUILeagueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveUILeagueView.swift; sourceTree = "<group>"; };
+		EE222B7428FC6CF900D20BE5 /* LiveLeagueService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveLeagueService.swift; sourceTree = "<group>"; };
 		EE59395A28FAA42200A3C087 /* 6PAS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 6PAS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE59395D28FAA42200A3C087 /* _PASApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _PASApp.swift; sourceTree = "<group>"; };
 		EE59395F28FAA42200A3C087 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE59396128FAA42300A3C087 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE59396428FAA42300A3C087 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		EE59396628FAA42300A3C087 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		EE59396928FAA42300A3C087 /* _PAS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = _PAS.xcdatamodel; sourceTree = "<group>"; };
 		EE59396B28FAA42300A3C087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE59397228FAAA5400A3C087 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +43,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE222B7B28FC6DF200D20BE5 /* SwiftyJSON in Frameworks */,
+				EE222B7828FC6DE600D20BE5 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE222B4428FC022900D20BE5 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				EE59395F28FAA42200A3C087 /* ContentView.swift */,
+				EE59397228FAAA5400A3C087 /* SplashScreen.swift */,
+				EE222B4228FBF73F00D20BE5 /* NavigationBarView.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		EE222B4528FC023900D20BE5 /* live */ = {
+			isa = PBXGroup;
+			children = (
+				EE222B4628FC024C00D20BE5 /* LiveUIView.swift */,
+				EE222B6E28FC685700D20BE5 /* LiveUILeagueView.swift */,
+			);
+			path = live;
+			sourceTree = "<group>";
+		};
+		EE222B4828FC1C3100D20BE5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE222B4928FC1C8500D20BE5 /* LiveLeagueModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE222B7328FC6CEB00D20BE5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EE222B7428FC6CF900D20BE5 /* LiveLeagueService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		EE59395128FAA42200A3C087 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +105,11 @@
 		EE59395C28FAA42200A3C087 /* 6PAS */ = {
 			isa = PBXGroup;
 			children = (
+				EE222B7328FC6CEB00D20BE5 /* Service */,
+				EE222B4828FC1C3100D20BE5 /* Model */,
+				EE59397128FAAA4100A3C087 /* View */,
 				EE59395D28FAA42200A3C087 /* _PASApp.swift */,
-				EE59395F28FAA42200A3C087 /* ContentView.swift */,
 				EE59396128FAA42300A3C087 /* Assets.xcassets */,
-				EE59396628FAA42300A3C087 /* Persistence.swift */,
 				EE59396B28FAA42300A3C087 /* Info.plist */,
 				EE59396828FAA42300A3C087 /* _PAS.xcdatamodeld */,
 				EE59396328FAA42300A3C087 /* Preview Content */,
@@ -73,6 +123,15 @@
 				EE59396428FAA42300A3C087 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE59397128FAAA4100A3C087 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE222B4528FC023900D20BE5 /* live */,
+				EE222B4428FC022900D20BE5 /* main */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +150,10 @@
 			dependencies = (
 			);
 			name = 6PAS;
+			packageProductDependencies = (
+				EE222B7728FC6DE600D20BE5 /* Alamofire */,
+				EE222B7A28FC6DF200D20BE5 /* SwiftyJSON */,
+			);
 			productName = 6PAS;
 			productReference = EE59395A28FAA42200A3C087 /* 6PAS.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +182,10 @@
 				Base,
 			);
 			mainGroup = EE59395128FAA42200A3C087;
+			packageReferences = (
+				EE222B7628FC6DE600D20BE5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				EE222B7928FC6DF200D20BE5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = EE59395B28FAA42200A3C087 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -145,10 +212,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE222B4728FC024C00D20BE5 /* LiveUIView.swift in Sources */,
+				EE59397328FAAA5400A3C087 /* SplashScreen.swift in Sources */,
 				EE59396A28FAA42300A3C087 /* _PAS.xcdatamodeld in Sources */,
-				EE59396728FAA42300A3C087 /* Persistence.swift in Sources */,
+				EE222B7528FC6CF900D20BE5 /* LiveLeagueService.swift in Sources */,
+				EE222B4A28FC1C8500D20BE5 /* LiveLeagueModel.swift in Sources */,
 				EE59396028FAA42200A3C087 /* ContentView.swift in Sources */,
+				EE222B6F28FC685700D20BE5 /* LiveUILeagueView.swift in Sources */,
 				EE59395E28FAA42200A3C087 /* _PASApp.swift in Sources */,
+				EE222B4328FBF73F00D20BE5 /* NavigationBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +421,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EE222B7628FC6DE600D20BE5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		EE222B7928FC6DF200D20BE5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE222B7728FC6DE600D20BE5 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE222B7628FC6DE600D20BE5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		EE222B7A28FC6DF200D20BE5 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE222B7928FC6DF200D20BE5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		EE59396828FAA42300A3C087 /* _PAS.xcdatamodeld */ = {
