@@ -14,6 +14,8 @@
 		EE222B7528FC6CF900D20BE5 /* LiveLeagueService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE222B7428FC6CF900D20BE5 /* LiveLeagueService.swift */; };
 		EE222B7828FC6DE600D20BE5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EE222B7728FC6DE600D20BE5 /* Alamofire */; };
 		EE222B7B28FC6DF200D20BE5 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = EE222B7A28FC6DF200D20BE5 /* SwiftyJSON */; };
+		EE5277E528FD747F00B19EC6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EE5277E428FD747F00B19EC6 /* Kingfisher */; };
+		EE5277E828FD959E00B19EC6 /* SwiftUIMargin in Frameworks */ = {isa = PBXBuildFile; productRef = EE5277E728FD959E00B19EC6 /* SwiftUIMargin */; };
 		EE59395E28FAA42200A3C087 /* _PASApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE59395D28FAA42200A3C087 /* _PASApp.swift */; };
 		EE59396028FAA42200A3C087 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE59395F28FAA42200A3C087 /* ContentView.swift */; };
 		EE59396228FAA42300A3C087 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE59396128FAA42300A3C087 /* Assets.xcassets */; };
@@ -43,7 +45,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5277E528FD747F00B19EC6 /* Kingfisher in Frameworks */,
 				EE222B7B28FC6DF200D20BE5 /* SwiftyJSON in Frameworks */,
+				EE5277E828FD959E00B19EC6 /* SwiftUIMargin in Frameworks */,
 				EE222B7828FC6DE600D20BE5 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +157,8 @@
 			packageProductDependencies = (
 				EE222B7728FC6DE600D20BE5 /* Alamofire */,
 				EE222B7A28FC6DF200D20BE5 /* SwiftyJSON */,
+				EE5277E428FD747F00B19EC6 /* Kingfisher */,
+				EE5277E728FD959E00B19EC6 /* SwiftUIMargin */,
 			);
 			productName = 6PAS;
 			productReference = EE59395A28FAA42200A3C087 /* 6PAS.app */;
@@ -185,6 +191,8 @@
 			packageReferences = (
 				EE222B7628FC6DE600D20BE5 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				EE222B7928FC6DF200D20BE5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				EE5277E328FD747E00B19EC6 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				EE5277E628FD959E00B19EC6 /* XCRemoteSwiftPackageReference "SwiftUIMargin" */,
 			);
 			productRefGroup = EE59395B28FAA42200A3C087 /* Products */;
 			projectDirPath = "";
@@ -439,6 +447,22 @@
 				kind = branch;
 			};
 		};
+		EE5277E328FD747E00B19EC6 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		EE5277E628FD959E00B19EC6 /* XCRemoteSwiftPackageReference "SwiftUIMargin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/karamage/SwiftUIMargin.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -451,6 +475,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EE222B7928FC6DF200D20BE5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		EE5277E428FD747F00B19EC6 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE5277E328FD747E00B19EC6 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		EE5277E728FD959E00B19EC6 /* SwiftUIMargin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE5277E628FD959E00B19EC6 /* XCRemoteSwiftPackageReference "SwiftUIMargin" */;
+			productName = SwiftUIMargin;
 		};
 /* End XCSwiftPackageProductDependency section */
 

@@ -5,7 +5,9 @@
 
 import Foundation
 struct LiveLeagueModel : Identifiable{
-    var id : Int
+    var id : String
+    var name : String
+    var imageURL : String
 }
 
 

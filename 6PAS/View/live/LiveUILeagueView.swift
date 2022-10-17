@@ -6,20 +6,22 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct LiveUILeagueView: View {
     var ImageUrl : String
     var leagueName : String
     
     var body: some View {
+        
         HStack{
-            AsyncImage(url: URL(string:ImageUrl))
+            KFImage(URL(string:ImageUrl))
+                .resizable()
                 .frame(width:50, height: 50)
             Text(leagueName)
             Spacer()
         }
-        .padding()
-        .background(.white)
+        
     }
 }
 

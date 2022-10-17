@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import SwiftUIMargin
+import Kingfisher
 
 struct HomeView: View{
     var body: some View{
@@ -18,28 +20,33 @@ struct HomeView: View{
 }
 struct LiveView: View{
     @ObservedObject var league = LiveLeagueService(path: "/odds/live")
-    
+ 
     var body: some View{
-        
-        NavigationView{
-            
-            
+  
             ZStack{
                 Color.gray.opacity(0.1)
-       
-                VStack{
-                    LiveUILeagueView(ImageUrl: "home", leagueName: "Süper lig")
-                    LiveUIView(date: "20:20", elapsedTime: "20", homeLogo: "logo", homeTeamName: "Abc", homeScore: "2", awayLogo: "logo", awayTeamName: "Cba", awayScore: "3")
-                        .padding()
-                        .cornerRadius(50, antialiased: false)
-                    
-                   
+           
+                    List(league.liveLeagueModel){response in
                         
-                }
+                            VStack{
+                                LiveUILeagueView(ImageUrl: response.imageURL, leagueName: response.name)
+                                    .margin(bottom: 10)
+                                Spacer()
+                                LiveUIView(date: "20:20", elapsedTime: "20", homeLogo: "logo", homeTeamName: "Abc", homeScore: "2", awayLogo: "logo", awayTeamName: "Cba", awayScore: "3")
+                                    .cornerRadius(10, antialiased: false)
+                            }
+                            
+                        
+                
             }
+       
+            
         }
+        
+        
     }
 }
+
 struct ProfileView: View{
     var body: some View{
      
@@ -54,6 +61,8 @@ struct ProfileView: View{
 struct ContentView: View {
     @State var animate : Bool = false
     @State var showSplash : Bool = true
+    @State var selection = 1
+    
     
     var body: some View {
         VStack{
@@ -64,24 +73,25 @@ struct ContentView: View {
                 VStack{
                     NavigationBarView()
                         
-                TabView{
-                   
+                TabView(selection: $selection){
+                    
                      
-                        LiveView()
+                    LiveView()
                             .tabItem {
                                 Image(systemName: "dot.radiowaves.left.and.right")
                                 Text("Canlı")
-                            }
+                            }.tag(2)
                         HomeView()
                             .tabItem {
                                 Image(systemName: "house")
                                 Text("Anasayfa")
-                            }
+                            }.tag(1)
+                            
                         ProfileView()
                             .tabItem {
                                 Image(systemName: "person")
                                 Text("Profil")
-                            }
+                            }.tag(3)
                     }
                     
                 }

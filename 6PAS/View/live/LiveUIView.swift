@@ -28,6 +28,7 @@ struct LiveUIView: View {
                 Spacer()
                 Text("'"+elapsedTime)
                     .foregroundColor(Color.red)
+                   
                     
             }
             HStack{
@@ -47,8 +48,8 @@ struct LiveUIView: View {
                 Text(awayScore)
             }
         }
-        .padding()
-        .background(.white)
+        
+        
         
     }
 }
