@@ -6,52 +6,58 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct LiveUIView: View {
-    var date : String
+
     var elapsedTime : String
+    var fixtureID : String
     
     //Home Team
-    var homeLogo : String
     var homeTeamName : String
     var homeScore : String
     
     //Away Team
-    var awayLogo : String
     var awayTeamName : String
     var awayScore : String
     
+  
+    
     var body: some View {
-        VStack{
-            HStack{
-                
-                Spacer()
-                Text("'"+elapsedTime)
-                    .foregroundColor(Color.red)
-                   
+        GeometryReader{r in
+            HStack(alignment: .center){
                     
-            }
-            HStack{
-                Image(homeLogo)
-                    .resizable()
-                    .frame(width: 30,height: 40)
+                Text("'"+elapsedTime)
+                    .foregroundColor(.red)
+                    .padding()
+                    .frame(width: r.size.width/6)
+                    .font(.custom("", size: 10))
+                    
+                Spacer()
                 Text(homeTeamName)
-                Spacer()
-                Text(homeScore)
-            }
-            HStack{
-                Image(awayLogo)
-                    .resizable()
-                    .frame(width: 30,height: 40)
+                    .frame(width: r.size.width/4, alignment: .trailing)
+                    .font(.custom("", size: 10))
+                    
+                Text(homeScore + " - " + awayScore)
+                    .frame(width: r.size.width/8)
+                    .font(.custom("", size: 10))
+                
                 Text(awayTeamName)
+                    .frame(width: r.size.width/4, alignment: .leading)
+                    .font(.custom("", size: 10))
+                    
                 Spacer()
-                Text(awayScore)
-            }
+                Image(systemName: "star")
+                    .frame(width: r.size.width/6)
+                    .font(.custom("", size: 14))
+                
+            }.frame(width: r.size.width)
         }
-        
-        
-        
     }
 }
-
+struct LiveUIView_Previews: PreviewProvider {
+    static var previews: some View {
+        LiveUIView(elapsedTime: "'12", fixtureID: "a",  homeTeamName: "Galatasaray", homeScore: "1",  awayTeamName: "Trabzon", awayScore: "3")
+    }
+}
 

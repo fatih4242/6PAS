@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE045A7F2904156000FDF4CE /* LiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE045A7E2904156000FDF4CE /* LiveView.swift */; };
 		EE222B4328FBF73F00D20BE5 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE222B4228FBF73F00D20BE5 /* NavigationBarView.swift */; };
 		EE222B4728FC024C00D20BE5 /* LiveUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE222B4628FC024C00D20BE5 /* LiveUIView.swift */; };
-		EE222B4A28FC1C8500D20BE5 /* LiveLeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE222B4928FC1C8500D20BE5 /* LiveLeagueModel.swift */; };
-		EE222B6F28FC685700D20BE5 /* LiveUILeagueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE222B6E28FC685700D20BE5 /* LiveUILeagueView.swift */; };
 		EE222B7528FC6CF900D20BE5 /* LiveLeagueService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE222B7428FC6CF900D20BE5 /* LiveLeagueService.swift */; };
 		EE222B7828FC6DE600D20BE5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EE222B7728FC6DE600D20BE5 /* Alamofire */; };
 		EE222B7B28FC6DF200D20BE5 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = EE222B7A28FC6DF200D20BE5 /* SwiftyJSON */; };
@@ -22,13 +21,30 @@
 		EE59396528FAA42300A3C087 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE59396428FAA42300A3C087 /* Preview Assets.xcassets */; };
 		EE59396A28FAA42300A3C087 /* _PAS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE59396828FAA42300A3C087 /* _PAS.xcdatamodeld */; };
 		EE59397328FAAA5400A3C087 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE59397228FAAA5400A3C087 /* SplashScreen.swift */; };
+		EE652046290188D700475070 /* LiveDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE652045290188D700475070 /* LiveDetailView.swift */; };
+		EE6520492901A01D00475070 /* SlidingTabView in Frameworks */ = {isa = PBXBuildFile; productRef = EE6520482901A01D00475070 /* SlidingTabView */; };
+		EE7B85EE28FEEC72002D4B1B /* LiveLeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B85ED28FEEC72002D4B1B /* LiveLeagueModel.swift */; };
+		EEADC99229004493007E7209 /* FontsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEADC99129004493007E7209 /* FontsManager.swift */; };
+		EEFBFE932902AF460080F489 /* LiveDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFBFE922902AF460080F489 /* LiveDetailService.swift */; };
+		EEFBFE952902BBF60080F489 /* LiveDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFBFE942902BBF60080F489 /* LiveDetailModel.swift */; };
+		EEFBFEA32902DA620080F489 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEFBFE972902DA610080F489 /* Roboto-Medium.ttf */; };
+		EEFBFEA42902DA620080F489 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEFBFE982902DA620080F489 /* Roboto-Light.ttf */; };
+		EEFBFEA52902DA620080F489 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEFBFE992902DA620080F489 /* Roboto-Bold.ttf */; };
+		EEFBFEA62902DA620080F489 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEFBFE9A2902DA620080F489 /* Roboto-BoldItalic.ttf */; };
+		EEFBFEA72902DA620080F489 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEFBFE9B2902DA620080F489 /* Roboto-Black.ttf */; };
+		EEFBFEA82902DA620080F489 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEFBFE9C2902DA620080F489 /* Roboto-Italic.ttf */; };
+		EEFBFEA92902DA620080F489 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEFBFE9D2902DA620080F489 /* Roboto-MediumItalic.ttf */; };
+		EEFBFEAA2902DA620080F489 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEFBFE9E2902DA620080F489 /* Roboto-ThinItalic.ttf */; };
+		EEFBFEAB2902DA620080F489 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEFBFE9F2902DA620080F489 /* Roboto-Thin.ttf */; };
+		EEFBFEAC2902DA620080F489 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEFBFEA02902DA620080F489 /* Roboto-LightItalic.ttf */; };
+		EEFBFEAD2902DA620080F489 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEFBFEA12902DA620080F489 /* Roboto-Regular.ttf */; };
+		EEFBFEAE2902DA620080F489 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EEFBFEA22902DA620080F489 /* Roboto-BlackItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE045A7E2904156000FDF4CE /* LiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveView.swift; sourceTree = "<group>"; };
 		EE222B4228FBF73F00D20BE5 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		EE222B4628FC024C00D20BE5 /* LiveUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveUIView.swift; sourceTree = "<group>"; };
-		EE222B4928FC1C8500D20BE5 /* LiveLeagueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveLeagueModel.swift; sourceTree = "<group>"; };
-		EE222B6E28FC685700D20BE5 /* LiveUILeagueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveUILeagueView.swift; sourceTree = "<group>"; };
 		EE222B7428FC6CF900D20BE5 /* LiveLeagueService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveLeagueService.swift; sourceTree = "<group>"; };
 		EE59395A28FAA42200A3C087 /* 6PAS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 6PAS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE59395D28FAA42200A3C087 /* _PASApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _PASApp.swift; sourceTree = "<group>"; };
@@ -38,6 +54,24 @@
 		EE59396928FAA42300A3C087 /* _PAS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = _PAS.xcdatamodel; sourceTree = "<group>"; };
 		EE59396B28FAA42300A3C087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE59397228FAAA5400A3C087 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		EE652045290188D700475070 /* LiveDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDetailView.swift; sourceTree = "<group>"; };
+		EE7B85ED28FEEC72002D4B1B /* LiveLeagueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveLeagueModel.swift; sourceTree = "<group>"; };
+		EEADC99129004493007E7209 /* FontsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsManager.swift; sourceTree = "<group>"; };
+		EEFBFE922902AF460080F489 /* LiveDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDetailService.swift; sourceTree = "<group>"; };
+		EEFBFE942902BBF60080F489 /* LiveDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDetailModel.swift; sourceTree = "<group>"; };
+		EEFBFE962902D8F60080F489 /* -PAS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "-PAS-Info.plist"; sourceTree = SOURCE_ROOT; };
+		EEFBFE972902DA610080F489 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "../../Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		EEFBFE982902DA620080F489 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "../../Roboto-Light.ttf"; sourceTree = "<group>"; };
+		EEFBFE992902DA620080F489 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "../../Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		EEFBFE9A2902DA620080F489 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-BoldItalic.ttf"; path = "../../Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		EEFBFE9B2902DA620080F489 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		EEFBFE9C2902DA620080F489 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Italic.ttf"; path = "../../Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		EEFBFE9D2902DA620080F489 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-MediumItalic.ttf"; path = "../../Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		EEFBFE9E2902DA620080F489 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-ThinItalic.ttf"; path = "../../Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		EEFBFE9F2902DA620080F489 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Thin.ttf"; path = "../../Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		EEFBFEA02902DA620080F489 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-LightItalic.ttf"; path = "../../Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		EEFBFEA12902DA620080F489 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../../Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		EEFBFEA22902DA620080F489 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE5277E528FD747F00B19EC6 /* Kingfisher in Frameworks */,
+				EE6520492901A01D00475070 /* SlidingTabView in Frameworks */,
 				EE222B7B28FC6DF200D20BE5 /* SwiftyJSON in Frameworks */,
 				EE5277E828FD959E00B19EC6 /* SwiftUIMargin in Frameworks */,
 				EE222B7828FC6DE600D20BE5 /* Alamofire in Frameworks */,
@@ -68,8 +103,9 @@
 		EE222B4528FC023900D20BE5 /* live */ = {
 			isa = PBXGroup;
 			children = (
+				EE045A7E2904156000FDF4CE /* LiveView.swift */,
 				EE222B4628FC024C00D20BE5 /* LiveUIView.swift */,
-				EE222B6E28FC685700D20BE5 /* LiveUILeagueView.swift */,
+				EE652045290188D700475070 /* LiveDetailView.swift */,
 			);
 			path = live;
 			sourceTree = "<group>";
@@ -77,7 +113,8 @@
 		EE222B4828FC1C3100D20BE5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EE222B4928FC1C8500D20BE5 /* LiveLeagueModel.swift */,
+				EE7B85ED28FEEC72002D4B1B /* LiveLeagueModel.swift */,
+				EEFBFE942902BBF60080F489 /* LiveDetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -86,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				EE222B7428FC6CF900D20BE5 /* LiveLeagueService.swift */,
+				EEFBFE922902AF460080F489 /* LiveDetailService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -109,6 +147,8 @@
 		EE59395C28FAA42200A3C087 /* 6PAS */ = {
 			isa = PBXGroup;
 			children = (
+				EEFBFE962902D8F60080F489 /* -PAS-Info.plist */,
+				EEADC9782900423B007E7209 /* Fonts */,
 				EE222B7328FC6CEB00D20BE5 /* Service */,
 				EE222B4828FC1C3100D20BE5 /* Model */,
 				EE59397128FAAA4100A3C087 /* View */,
@@ -138,6 +178,26 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		EEADC9782900423B007E7209 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EEFBFE9B2902DA620080F489 /* Roboto-Black.ttf */,
+				EEFBFEA22902DA620080F489 /* Roboto-BlackItalic.ttf */,
+				EEFBFE992902DA620080F489 /* Roboto-Bold.ttf */,
+				EEFBFE9A2902DA620080F489 /* Roboto-BoldItalic.ttf */,
+				EEFBFE9C2902DA620080F489 /* Roboto-Italic.ttf */,
+				EEFBFE982902DA620080F489 /* Roboto-Light.ttf */,
+				EEFBFEA02902DA620080F489 /* Roboto-LightItalic.ttf */,
+				EEFBFE972902DA610080F489 /* Roboto-Medium.ttf */,
+				EEFBFE9D2902DA620080F489 /* Roboto-MediumItalic.ttf */,
+				EEFBFEA12902DA620080F489 /* Roboto-Regular.ttf */,
+				EEFBFE9F2902DA620080F489 /* Roboto-Thin.ttf */,
+				EEFBFE9E2902DA620080F489 /* Roboto-ThinItalic.ttf */,
+				EEADC99129004493007E7209 /* FontsManager.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,6 +219,7 @@
 				EE222B7A28FC6DF200D20BE5 /* SwiftyJSON */,
 				EE5277E428FD747F00B19EC6 /* Kingfisher */,
 				EE5277E728FD959E00B19EC6 /* SwiftUIMargin */,
+				EE6520482901A01D00475070 /* SlidingTabView */,
 			);
 			productName = 6PAS;
 			productReference = EE59395A28FAA42200A3C087 /* 6PAS.app */;
@@ -193,6 +254,7 @@
 				EE222B7928FC6DF200D20BE5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				EE5277E328FD747E00B19EC6 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				EE5277E628FD959E00B19EC6 /* XCRemoteSwiftPackageReference "SwiftUIMargin" */,
+				EE6520472901A01D00475070 /* XCRemoteSwiftPackageReference "SlidingTabView" */,
 			);
 			productRefGroup = EE59395B28FAA42200A3C087 /* Products */;
 			projectDirPath = "";
@@ -208,6 +270,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEFBFEA32902DA620080F489 /* Roboto-Medium.ttf in Resources */,
+				EEFBFEA42902DA620080F489 /* Roboto-Light.ttf in Resources */,
+				EEFBFEA52902DA620080F489 /* Roboto-Bold.ttf in Resources */,
+				EEFBFEA62902DA620080F489 /* Roboto-BoldItalic.ttf in Resources */,
+				EEFBFEA72902DA620080F489 /* Roboto-Black.ttf in Resources */,
+				EEFBFEA82902DA620080F489 /* Roboto-Italic.ttf in Resources */,
+				EEFBFEA92902DA620080F489 /* Roboto-MediumItalic.ttf in Resources */,
+				EEFBFEAA2902DA620080F489 /* Roboto-ThinItalic.ttf in Resources */,
+				EEFBFEAB2902DA620080F489 /* Roboto-Thin.ttf in Resources */,
+				EEFBFEAC2902DA620080F489 /* Roboto-LightItalic.ttf in Resources */,
+				EEFBFEAD2902DA620080F489 /* Roboto-Regular.ttf in Resources */,
+				EEFBFEAE2902DA620080F489 /* Roboto-BlackItalic.ttf in Resources */,
 				EE59396528FAA42300A3C087 /* Preview Assets.xcassets in Resources */,
 				EE59396228FAA42300A3C087 /* Assets.xcassets in Resources */,
 			);
@@ -220,15 +294,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEFBFE952902BBF60080F489 /* LiveDetailModel.swift in Sources */,
 				EE222B4728FC024C00D20BE5 /* LiveUIView.swift in Sources */,
 				EE59397328FAAA5400A3C087 /* SplashScreen.swift in Sources */,
+				EEFBFE932902AF460080F489 /* LiveDetailService.swift in Sources */,
+				EEADC99229004493007E7209 /* FontsManager.swift in Sources */,
 				EE59396A28FAA42300A3C087 /* _PAS.xcdatamodeld in Sources */,
 				EE222B7528FC6CF900D20BE5 /* LiveLeagueService.swift in Sources */,
-				EE222B4A28FC1C8500D20BE5 /* LiveLeagueModel.swift in Sources */,
+				EE045A7F2904156000FDF4CE /* LiveView.swift in Sources */,
 				EE59396028FAA42200A3C087 /* ContentView.swift in Sources */,
-				EE222B6F28FC685700D20BE5 /* LiveUILeagueView.swift in Sources */,
 				EE59395E28FAA42200A3C087 /* _PASApp.swift in Sources */,
+				EE652046290188D700475070 /* LiveDetailView.swift in Sources */,
 				EE222B4328FBF73F00D20BE5 /* NavigationBarView.swift in Sources */,
+				EE7B85EE28FEEC72002D4B1B /* LiveLeagueModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,11 +438,13 @@
 				DEVELOPMENT_TEAM = 4D4T6WY646;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "-PAS-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -389,11 +469,13 @@
 				DEVELOPMENT_TEAM = 4D4T6WY646;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "-PAS-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,6 +545,14 @@
 				kind = branch;
 			};
 		};
+		EE6520472901A01D00475070 /* XCRemoteSwiftPackageReference "SlidingTabView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/QuynhNguyen/SlidingTabView.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -485,6 +575,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EE5277E628FD959E00B19EC6 /* XCRemoteSwiftPackageReference "SwiftUIMargin" */;
 			productName = SwiftUIMargin;
+		};
+		EE6520482901A01D00475070 /* SlidingTabView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE6520472901A01D00475070 /* XCRemoteSwiftPackageReference "SlidingTabView" */;
+			productName = SlidingTabView;
 		};
 /* End XCSwiftPackageProductDependency section */
 
