@@ -1,49 +1,46 @@
-//
-//  LiveView.swift
 //  6PAS
 //
 //  Created by Fatih Toker on 22.10.2022.
 //
 
 import SwiftUI
+import Kingfisher
 
 
 struct LiveView: View{
-    @ObservedObject var league = LiveLeagueService()
-    
-   
+    //@ObservedObject private var league = LiveLeagueService()
+    @StateObject var league : LiveLeagueViewModel
     
     @State public var leagueName : String = "Live"
     @State public var leagueLogo : String = "Live"
     
+    @State private var beforeLeagueName : String = ""
+    
+    
+    
     var body: some View{
         NavigationView {
-            VStack{
-              
-                List(league.liveLeagueModel) {response in
-                    //Text("\(self.league.liveLeagueTeamModel[i].awayTeamScore)")
-                    NavigationLink {
-                        LiveDetailView( league: LiveDetailService(path: "/fixtures", fixtureID: response.fixtureID))
-                    } label: {
-                        LiveUIView( elapsedTime: response.elapsedTime , fixtureID: response.fixtureID ,  homeTeamName: response.homeTeamName, homeScore: response.homeTeamScore,  awayTeamName: response.awayTeamName, awayScore: response.homeTeamScore)
-                        
+                VStack{
+                    List(league.liveLeagueModel) {response in
                             
-                    }.buttonStyle(PlainButtonStyle())
-                        .listStyle(PlainListStyle())
+                            LiveLeagueUIView(leagueLogo: response.leagueLogo, leagueName: response.leagueName)
+                                
+                            NavigationLink {
+                                LiveDetailView(league: LiveDetailViewModel(service: LiveDetailService(), fixtureID: response.fixtureID))
+                                
+                            } label: {
+                                LiveUIView( elapsedTime: response.elapsedTime , fixtureID: response.fixtureID ,  homeTeamName: response.homeTeamName, homeScore: response.homeTeamScore,  awayTeamName: response.awayTeamName, awayScore: response.homeTeamScore)
+                                   
+                            }
+                        }
+                    .buttonStyle(PlainButtonStyle())
+                    .listStyle(PlainListStyle())
 
-                   
                 }
-                .listStyle(PlainListStyle())
-                
-                
-               
+              
             }
-            
-       
-           
+                
         }
-       
-    }
 }
 
 struct ProfileView: View{
@@ -75,7 +72,7 @@ struct ContentView: View {
                 TabView(selection: $selection){
                     
                      
-                    LiveView(leagueName: "", leagueLogo: "" )
+                    LiveView(league: LiveLeagueViewModel(service: LiveLeagueService()), leagueName: "", leagueLogo: "")
                             .tabItem {
                                 Image(systemName: "dot.radiowaves.left.and.right")
                                 Text("Canlı")
@@ -94,15 +91,11 @@ struct ContentView: View {
                                 Text("Profil")
                             }.tag(3)
                     }
-                    
                 }
                 .background(Color("bg-2"))
                 SplashScreen(showSplash: self.showSplash, animate: self.animate)
             }
-           
         }
-        
-
         .onAppear{
             DispatchQueue.main.asyncAfter(deadline: .now()+1){
                 animate.toggle()
@@ -112,14 +105,10 @@ struct ContentView: View {
             }
         }.background(Color("bg").edgesIgnoringSafeArea(.all))
     }
-
-    
-
-   
 }
 
 struct LiveView_Previews: PreviewProvider {
     static var previews: some View {
-        LiveView()
+        LiveView(league: LiveLeagueViewModel(service: LiveLeagueService()))
     }
 }

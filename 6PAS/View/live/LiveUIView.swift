@@ -24,35 +24,40 @@ struct LiveUIView: View {
   
     
     var body: some View {
-        GeometryReader{r in
-            HStack(alignment: .center){
+      
+            GeometryReader{r in
+                HStack(alignment: .center){
+                        
+                    Text("'"+elapsedTime)
+                        .foregroundColor(.red)
+                        .padding()
+                        .frame(width: r.size.width/6)
+                        .font(.custom("", size: 10))
+                        
+                    Spacer()
+                    Text(homeTeamName)
+                        .frame(width: r.size.width/4, alignment: .trailing)
+                        .font(.custom("", size: 10))
+                        
+                    Text(homeScore + " - " + awayScore)
+                        .frame(width: r.size.width/8)
+                        .font(.custom("", size: 10))
                     
-                Text("'"+elapsedTime)
-                    .foregroundColor(.red)
-                    .padding()
-                    .frame(width: r.size.width/6)
-                    .font(.custom("", size: 10))
+                    Text(awayTeamName)
+                        .frame(width: r.size.width/4, alignment: .leading)
+                        .font(.custom("", size: 10))
+                        
+                    Spacer()
+                    Image(systemName: "star")
+                        .frame(width: r.size.width/6)
+                        .font(.custom("", size: 14))
                     
-                Spacer()
-                Text(homeTeamName)
-                    .frame(width: r.size.width/4, alignment: .trailing)
-                    .font(.custom("", size: 10))
-                    
-                Text(homeScore + " - " + awayScore)
-                    .frame(width: r.size.width/8)
-                    .font(.custom("", size: 10))
-                
-                Text(awayTeamName)
-                    .frame(width: r.size.width/4, alignment: .leading)
-                    .font(.custom("", size: 10))
-                    
-                Spacer()
-                Image(systemName: "star")
-                    .frame(width: r.size.width/6)
-                    .font(.custom("", size: 14))
-                
-            }.frame(width: r.size.width)
-        }
+                }
+                .frame(width: r.size.width)
+               
+            }
+           
+        
     }
 }
 struct LiveUIView_Previews: PreviewProvider {

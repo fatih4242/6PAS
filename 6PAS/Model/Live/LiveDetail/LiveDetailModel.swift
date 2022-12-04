@@ -15,6 +15,13 @@ struct LiveDetailModel : Identifiable{
     var homeLogo : URL
     var awayLogo : URL
     
+    var homeGoal : String
+    var awayGoal : String
     
+    var matchHalf : String
+    var elapsedTime : String
+    
+    var referee : String
+    var venue : String
 }
 

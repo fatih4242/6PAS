@@ -12,6 +12,9 @@ struct LiveLeagueModel : Identifiable{
     var fixtureID : String
    
     var elapsedTime : String
+    
+    var leagueLogo : String
+    var leagueName : String
    
     //Home Team
     var homeTeamName : String
