@@ -44,6 +44,8 @@ class LineupsViewModel : ObservableObject{
     
     var season : String = ""
     
+    var test : String = ""
+    
     
     private func GetEventsData(){
         self.service.GetSeason(path: "/fixtures", fixtureID: self.fixtureID) { (response, status) in
